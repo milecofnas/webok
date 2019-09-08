@@ -6,27 +6,34 @@ body{
 }
 .header{
     background-color:  #343a40;
-    height: 80px;
+width: 100%;
+position: fixed;
+top: 0;
 }
- .item{
-     display:inline-block;
-     margin-right: 40px;
- }
+h1, h4 {
+    display: inline-block;
+    margin-right: 10px;
+}
+h1{
+    position: relative; 
+    left: 25px;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}  
  a {
      text-decoration: none;
      color: white;
  }
- a:visited{
-     text-decoration: none;
-     color: white;
+ a:hover {
+    color:#1abc9c; 
  }
- .title{
-     display: inline-block;
-     margin-right: 550px;
-     margin-left: 150px;
-     
- }
+ 
  .principal{
+     padding-top: 50px;
      padding-bottom: 100px;
      background-color: #1abc9c;
      text-align: center; 
@@ -52,7 +59,7 @@ body{
      background-color: white;
      text-align: center;
  }
- .footer {
+ .informacion {
      padding-bottom: 100px;
      height: 300px;
      background-color: #1abc9c;
@@ -106,4 +113,45 @@ hr {
     display: inline-block;
     color: white;
 }
-
+.formulario {
+    background-color: white;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+#contact{
+    color: #343a40;
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;   
+    margin-bottom: -5px; 
+}
+input, textarea {
+    display: block;
+    position: relative;
+    left: 350px;
+    top: 20px;
+    padding-left: 5px;
+    width: 650px;
+    height: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border: none; 
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}
+input:focus {
+    color: #343a40;
+}
+.enviar {
+    background-color: lightseagreen;
+    color: white;
+    width: 100px;
+    height: 50px; 
+    border-radius: 5px; 
+    position: relative; 
+    left: 350px; 
+    top: 40px;
+}
+input[type=submit]:hover{
+    background-color: #1abc9c;
+} 
